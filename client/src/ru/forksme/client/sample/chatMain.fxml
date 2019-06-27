@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #4169E1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMain">
+    <children>
+        <AnchorPane layoutX="225.0" prefHeight="500.0" prefWidth="538.0" style="-fx-background-color: #A9A9A9;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <ScrollBar layoutX="532.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="14.0" style="-fx-background-color: #A9A9A9;" AnchorPane.rightAnchor="0.0" />
+            <AnchorPane layoutX="1.0" prefHeight="61.0" prefWidth="507.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <TextField fx:id="textFileldNullMessageInDialog" disable="true" editable="false" layoutX="176.0" layoutY="237.0" prefHeight="26.0" prefWidth="200.0" text="В диалоге нет сообщений" />
+            <TextArea fx:id="textAreaDialog" editable="false" layoutX="1.0" layoutY="61.0" prefHeight="439.0" prefWidth="538.0" style="-fx-background-color: #A9A9A9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="61.0" />
+            <TextField fx:id="textFileldNullMessageInDialog1" disable="true" editable="false" layoutX="169.0" layoutY="237.0" prefHeight="26.0" prefWidth="200.0" text="В диалоге нет сообщений" />
+            <TextField fx:id="writeMessageInDialog1" layoutX="4.0" layoutY="445.0" prefHeight="36.0" prefWidth="518.0" promptText="Введите сообщение..." style="-fx-background-color: white;" />
+            <ImageView fx:id="addDocumentsInChatButton1" fitHeight="26.0" fitWidth="44.0" layoutX="392.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/addDoc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="addSmileInMessageButton1" fitHeight="26.0" fitWidth="26.0" layoutX="360.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/smile.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="sendAudioMessageButton1" fitHeight="36.0" fitWidth="36.0" layoutX="418.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/micro.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="sendMessageButton1" layoutX="451.0" layoutY="445.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="87.0" style="-fx-background-color: #FF4500;" text="Отправить" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textFieldLastMessageInDialog" disable="true" editable="false" layoutX="-6.0" layoutY="132.0" prefHeight="26.0" prefWidth="165.0" promptText="Ты самый ужасный" />
+            <TextField layoutX="85.0" layoutY="146.0" prefHeight="26.0" prefWidth="309.0" style="-fx-background-color: black;" />
+            </children>
+        </AnchorPane>
+      <Avatar fx:id="avatarClient" layoutY="70.0" style="-fx-background-color: #FF4500;" AnchorPane.bottomAnchor="394.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="764.0" />
+      <TextField fx:id="textFieldNickNameClient" alignment="TOP_LEFT" editable="false" layoutX="42.0" layoutY="63.0" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: white;" text="Аля" />
+      <TextField alignment="TOP_LEFT" disable="true" editable="false" layoutX="42.0" layoutY="135.0" prefHeight="61.0" prefWidth="220.0" style="-fx-background-color: white;" text="Чат вилочник" />
+      <TextField editable="false" layoutX="42.0" layoutY="165.0" prefHeight="26.0" prefWidth="220.0" promptText="Вилки принесут нам миллионы" />
+      <AnchorPane prefHeight="61.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="searchMessage" layoutX="51.0" layoutY="18.0" prefHeight="26.0" prefWidth="210.0" promptText="Поиск..." style="-fx-background-color: #DCDCDC;" />
+            <ImageView fx:id="menuButton" disable="true" fitHeight="36.0" fitWidth="36.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/MenuIcon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textFielfNickNameClientInDialog" disable="true" editable="false" layoutX="272.0" layoutY="5.0" text="Аля" />
+            <TextField fx:id="textFiledLastOnlineTime" disable="true" editable="false" layoutX="272.0" layoutY="31.0" prefHeight="26.0" prefWidth="200.0" promptText="был(а) в сети 40 минут назад" />
+         </children>
+      </AnchorPane>
+      <Avatar fx:id="avatarClient1" layoutX="6.0" layoutY="142.0" style="-fx-background-color: #FF4500;" />
+    </children>
+</AnchorPane>
